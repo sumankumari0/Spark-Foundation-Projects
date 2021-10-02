@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="ystyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+      <div class="mobile">
+        <div class="first-div">
+            <div class="dropdown">
+              <img src="/inkoop/img/menulogo.jpeg" onclick="myFunction()" class="dropbtn" width="75" height="100">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+
+            <!--logo-->
+            
+        </div>
+
+
+        <div class="lorem">
+            <h2><strong>Lorem</strong>
+        </div>
+
+        <div class="cart">
+            <a href="#"><img src="/inkoop/img/cart.svg"></a>
+        </div>
+        
+
+        <br>
+        <br>
+        <br>
+        <div class="body">
+                <div class="content">
+                    <div class="heading">
+                        <h1><strong><b>What are you <br>having for Lunch?</b></strong></h2>
+                    </div>
+                </div>
+           
+               <div class="item-list">
+                   <ul id="autoWidth" class="container" class="cs-hidden">
+
+                       <li class="item">
+                           <div class="feature-box">
+                               <a href="#">
+                                   <img src="/inkoop/img/food1.jpeg">
+                               </a>
+                           </div>
+                           <span>Mexican Taco</span>
+                       </li>
+                      
+                       <li class="item">
+                           <div class="feature-box">
+                               <a href="#">
+                                   <img src="/inkoop/img/food2.jpeg">
+                               </a>
+                           </div>
+                           <span>Farmhouse Pizza</span>
+                       </li>
+                       
+                       <li class="item">
+                           <div class="feature-box">
+                               <a href="#">
+                                   <img src="/inkoop/img/food3.jpeg">
+                               </a>
+                           </div>
+                           <span>Chicken Burger</span>
+                       </li>
+                      
+                       <li class="item">
+                           <div class="feature-box">
+                               <a href="#">
+                                   <img src="/inkoop/img/food4.jpeg">
+                               </a>
+                           </div>
+                           <span>Loaded Nachos</span>
+                       </li>
+                     
+                       <li class="item">
+                           <div class="feature-box">
+                               <a href="#">
+                                   <img src="/inkoop/img/food5.jpeg">
+                               </a>
+                           </div>
+                           <span>Hakka Noodles</span>
+                       </li>
+                     </ul>
+                     
+               </div>
+            </div>
+               <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et.</p>
+                    <hr style="width:15%;height:5px;border-width:0;border-radius:5px;color:blue;background-color:red;text-align:left;margin-left:0;">
+                </div>
+    
+               
+            </div>
+            </div>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    </body>
+</html>
